@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
-
 import Micro from "../asset/Rectangle 11 (2).png";
 import Pc from "../asset/10706486 1.png";
 import smarter from "../asset/Smart@4x 1.png";
 import lappy from "../asset/Rectangle 11 (1).png";
 import earpod from "../asset/earpod 1.png";
 import Assess from "../asset/Asset 2@4x.png";
+import Dispenser from "../asset/Despenser 1.png";
 
 console.log("CartContext:", CartContext);
 const products = [
@@ -29,28 +29,35 @@ const products = [
     image: smarter,
     category: "WristWatch",
     name: "Smart@4x 1.png",
-    price: "₦80,000",
+    price: "₦200,000",
   },
   {
     id: 4,
     image: lappy,
     category: "Laptop",
     name: "Rectangle 11 (1).png",
-    price: "₦80,000",
+    price: "₦20,000",
   },
   {
     id: 5,
     image: earpod,
     category: "Earpod",
     name: "earpod 1.png",
-    price: "₦80,000",
+    price: "₦20,000",
   },
   {
     id: 6,
     image: Assess,
     category: "SmartWatch",
     name: "Asset 2@4x.png",
-    price: "₦80,000",
+    price: "₦100,000",
+  },
+  {
+    id: 7,
+    image: Dispenser,
+    category: "Dispender",
+    name: "Dispenser",
+    price: "₦30,000",
   },
 ];
 

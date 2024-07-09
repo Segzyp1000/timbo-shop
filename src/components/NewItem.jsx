@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import Micro from "../asset/Rectangle 11 (2).png";
 import Pc from "../asset/10706486 1.png";
@@ -6,6 +7,7 @@ import smarter from "../asset/Smart@4x 1.png";
 import lappy from "../asset/Rectangle 11 (1).png";
 import earpod from "../asset/earpod 1.png";
 import Assess from "../asset/Asset 2@4x.png";
+import Dispenser from "../asset/Despenser 1.png";
 import { CartContext } from "../CartContext";
 
 const ProductCard = ({ id, image, category, name, price }) => {
@@ -21,12 +23,13 @@ const ProductCard = ({ id, image, category, name, price }) => {
         <p className="font-bold text-lg mb-2">{name}</p>
         <div className="flex justify-between items-center">
           <p className="font-bold">{price}</p>
-          <button
+          <Link
+            to="/cart"
             onClick={() => cart.addOneToCart(id)}
             className="flex items-center gap-2 bg-red-600 text-white rounded-full px-4 py-2 text-sm"
           >
             Add to Cart <FaShoppingCart />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -54,28 +57,42 @@ const NewItem = () => {
       image: smarter,
       category: "WristWatch",
       name: "Smart Watch",
-      price: "₦80,000",
+      price: "₦200,000",
     },
     {
       id: 4,
       image: lappy,
       category: "Laptop",
       name: "High-Performance Laptop",
-      price: "₦80,000",
+      price: "₦20,000",
     },
     {
       id: 5,
       image: earpod,
       category: "Earpod",
       name: "Wireless Earpods",
-      price: "₦80,000",
+      price: "₦20,000",
     },
     {
       id: 6,
       image: Assess,
       category: "SmartWatch",
       name: "Advanced SmartWatch",
-      price: "₦80,000",
+      price: "₦100,000",
+    },
+    {
+      id: 7,
+      image: Dispenser,
+      category: " Dispenser",
+      name: "Dispenser",
+      price: "₦30,000",
+    },
+    {
+      id: 8,
+      image: Dispenser,
+      category: "Blender",
+      name: "Despenser 1.png",
+      price: "₦30,000",
     },
   ];
 

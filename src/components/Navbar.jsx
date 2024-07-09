@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <Link to="/">Home</Link>
           <Link to="/cart">
-            <FaShoppingCart className="bg-navText rounded-xl text-2xl" />
+            <FaShoppingCart className="bg-navText text-black rounded-xl text-2xl" />
           </Link>
 
           <button
