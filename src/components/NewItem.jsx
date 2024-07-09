@@ -12,7 +12,7 @@ const ProductCard = ({ id, image, category, name, price }) => {
   const cart = useContext(CartContext);
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden" id="product">
       <div className="bg-productColor h-[200px] lg:h-[300px] flex items-center justify-center">
         <img src={image} alt={name} className="max-h-full w-auto" />
       </div>
