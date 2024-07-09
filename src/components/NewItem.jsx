@@ -8,6 +8,8 @@ import lappy from "../asset/Rectangle 11 (1).png";
 import earpod from "../asset/earpod 1.png";
 import Assess from "../asset/Asset 2@4x.png";
 import Dispenser from "../asset/Despenser 1.png";
+import Blender from "../asset/Blender@4x 1.png";
+import Iron from "../asset/Iron@4x 1.png";
 import { CartContext } from "../CartContext";
 
 const ProductCard = ({ id, image, category, name, price }) => {
@@ -56,43 +58,50 @@ const NewItem = () => {
       id: 3,
       image: smarter,
       category: "WristWatch",
-      name: "Smart Watch",
+      name: "SmartWatch",
       price: "₦200,000",
     },
     {
       id: 4,
       image: lappy,
       category: "Laptop",
-      name: "High-Performance Laptop",
+      name: "Core i7 15GB RAM",
       price: "₦20,000",
     },
     {
       id: 5,
       image: earpod,
       category: "Earpod",
-      name: "Wireless Earpods",
+      name: "noise cancelation and thick bass",
       price: "₦20,000",
     },
     {
       id: 6,
       image: Assess,
       category: "SmartWatch",
-      name: "Advanced SmartWatch",
+      name: "iPhone two sim card watch",
       price: "₦100,000",
     },
     {
       id: 7,
       image: Dispenser,
-      category: " Dispenser",
-      name: "Dispenser",
+      category: "Dispender",
+      name: "Fruit Dispenser",
       price: "₦30,000",
     },
     {
       id: 8,
-      image: Dispenser,
+      image: Blender,
       category: "Blender",
-      name: "Despenser 1.png",
-      price: "₦30,000",
+      name: "Blender Machine",
+      price: "₦45,000",
+    },
+    {
+      id: 9,
+      image: Iron,
+      category: "Stem Iron",
+      name: "Stem Iron",
+      price: "₦15,000",
     },
   ];
 
