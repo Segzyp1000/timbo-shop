@@ -13,9 +13,12 @@ const Preview = () => {
             DIVERSE COLLECTION
           </span>
           <div className="mt-6">
-            <button className="bg-navText text-navColor font-semibold p-2 rounded-lg">
+            <a
+              href="#product"
+              className="bg-navText text-navColor font-semibold p-2 rounded-lg"
+            >
               Shop Now
-            </button>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
