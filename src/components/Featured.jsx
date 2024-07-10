@@ -44,7 +44,6 @@ const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
 };
 
 const Featured = () => {
-  // const cart = useContext(CartContext);
   const featuredProducts = [
     {
       id: 10,
@@ -69,16 +68,8 @@ const Featured = () => {
     },
   ];
 
-  // const getTotalCost = () => {
-  //   return featuredProducts.reduce((total, product) => {
-  //     const quantity = cart.getProductQuantity(product.id);
-  //     const price = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
-  //     return total + price * quantity;
-  //   }, 0);
-  // };
-
   return (
-    <div className="bg-navColor py-12 lg:py-24 mt-32">
+    <div className="bg-navColor py-12 lg:py-24 mt-32" id="featured">
       <div className="container mx-auto px-4 lg:px-8">
         <h1 className="text-3xl lg:text-[45px] font-semibold text-navText mb-8 text-center lg:text-left">
           Featured Categories
