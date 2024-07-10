@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
+import { useNavigate } from "react-router-dom";
 import Micro from "../asset/Rectangle 11 (2).png";
 import Pc from "../asset/10706486 1.png";
 import smarter from "../asset/Smart@4x 1.png";
@@ -102,6 +103,7 @@ const products = [
 
 const CartPage = () => {
   const cart = useContext(CartContext);
+  const navigate = useNavigate();
 
   const renderCartItem = (item) => {
     const product = products.find((p) => p.id === item.id);
@@ -168,7 +170,10 @@ const CartPage = () => {
               Total: ₦{getTotalCost().toLocaleString()}
             </h2>
           </div>
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+          <button
+            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+            onClick={() => navigate("/checkout", { cartItems: cart.items })}
+          >
             Proceed to Checkout
           </button>
         </>

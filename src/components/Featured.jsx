@@ -44,7 +44,7 @@ const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
 };
 
 const Featured = () => {
-  const cart = useContext(CartContext);
+  // const cart = useContext(CartContext);
   const featuredProducts = [
     {
       id: 10,
@@ -69,13 +69,13 @@ const Featured = () => {
     },
   ];
 
-  const getTotalCost = () => {
-    return featuredProducts.reduce((total, product) => {
-      const quantity = cart.getProductQuantity(product.id);
-      const price = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
-      return total + price * quantity;
-    }, 0);
-  };
+  // const getTotalCost = () => {
+  //   return featuredProducts.reduce((total, product) => {
+  //     const quantity = cart.getProductQuantity(product.id);
+  //     const price = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
+  //     return total + price * quantity;
+  //   }, 0);
+  // };
 
   return (
     <div className="bg-navColor py-12 lg:py-24 mt-32">
@@ -87,9 +87,6 @@ const Featured = () => {
           {featuredProducts.map((product) => (
             <FeaturedItem key={product.id} {...product} />
           ))}
-        </div>
-        <div className="mt-8 text-right">
-          <h2 className="text-2xl font-semibold text-navText"></h2>
         </div>
       </div>
     </div>

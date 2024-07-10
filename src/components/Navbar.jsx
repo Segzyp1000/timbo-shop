@@ -10,11 +10,11 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl lg:text-[35px] font-bold">EverTrend</h1>
         <div className="hidden lg:flex space-x-5 text-xl">
-          <a href="#product" className="font-bold">
+          <a href="#new-item" className="font-bold">
             Product
           </a>
-          <a href="#product">Shop</a>
-          <a href="#category">Categories</a>
+          <a href="#new-item">Shop</a>
+          <a href="#featured">Categories</a>
         </div>
         <div className="flex items-center space-x-4">
           <Link to="/">Home</Link>
@@ -32,13 +32,13 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="lg:hidden mt-4 space-y-2">
-          <a href="#product" className="block font-bold">
+          <a href="#new-item" className="block font-bold">
             Product
           </a>
-          <a href="#product" className="block">
+          <a href="#new-item" className="block">
             Shop
           </a>
-          <a href="#category" className="block">
+          <a href="#featured" className="block">
             Categories
           </a>
         </div>
