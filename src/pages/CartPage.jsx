@@ -9,8 +9,10 @@ import Assess from "../asset/Asset 2@4x.png";
 import Dispenser from "../asset/Despenser 1.png";
 import Blender from "../asset/Blender@4x 1.png";
 import Iron from "../asset/Iron@4x 1.png";
+import Smart from "../asset/Smart watch 1.png";
+import Headphone from "../asset/Beautiful gaming headphone -5 1.png";
+import Laptop from "../asset/laptop.png";
 
-console.log("CartContext:", CartContext);
 const products = [
   {
     id: 1,
@@ -74,6 +76,27 @@ const products = [
     category: "Stem Iron",
     name: "Stem Iron",
     price: "₦15,000",
+  },
+  {
+    id: 10,
+    image: Smart,
+    category: "Wristwaatch",
+    name: "Smart wireless watch",
+    price: "N300,000",
+  },
+  {
+    id: 11,
+    image: Headphone,
+    category: "Headset",
+    name: "Gaming Headset",
+    price: "₦50,000",
+  },
+  {
+    id: 12,
+    image: Laptop,
+    category: "Laptop",
+    name: "Core i7 Laptop",
+    price: "₦150,000",
   },
 ];
 
