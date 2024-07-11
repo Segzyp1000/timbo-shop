@@ -24,14 +24,14 @@ const ProductCard = ({ id, image, category, name, price }) => {
         <img src={image} alt={name} className="max-h-full w-auto" />
       </div>
       <div className="p-4">
-        <p className="text-sm text-gray-600">{category}</p>
+        <p className="text-sm text-categoryColor">{category}</p>
         <p className="font-bold text-lg mb-2">{name}</p>
         <div className="flex justify-between items-center">
           <p className="font-bold">{price}</p>
           <Link
             to="/cart"
             onClick={() => cart.addOneToCart(id)}
-            className="flex items-center gap-2 bg-red-600 text-white rounded-full px-4 py-2 text-sm"
+            className="flex items-center gap-2 bg-buttonBackground text-white rounded-full px-4 py-2 text-sm"
           >
             Add to Cart <FaShoppingCart />
           </Link>

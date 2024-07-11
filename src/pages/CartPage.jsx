@@ -172,7 +172,12 @@ const CartPage = () => {
           </div>
           <button
             className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={() => navigate("/checkout", { cartItems: cart.items })}
+            onClick={() =>
+              navigate("/checkout", {
+                cartItems: cart.items,
+                totalAmount: getTotalCost(),
+              })
+            }
           >
             Proceed to Checkout
           </button>

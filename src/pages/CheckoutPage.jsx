@@ -3,7 +3,7 @@ import { PaystackButton } from "react-paystack";
 
 const CheckoutPage = () => {
   const publicKey = "pk_test_b01250423ad98ed5727975da49e193150aecd1e5";
-  const amount = 1000000; // Remember, set in kobo!
+  const amount = 1000000;
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
