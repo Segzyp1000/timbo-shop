@@ -12,7 +12,7 @@ const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
 
   return (
     <div className="bg-slate-400 p-4 rounded-lg">
-      <img src={image} alt={title} className="w-full h-auto mb-4" />
+      <img src={image} alt={title} className="w-[349px] h-[309px] mb-4" />
       <p className="text-xl text-white font-semibold mb-2">{title}</p>
       <div className="flex justify-between items-center">
         <div>
