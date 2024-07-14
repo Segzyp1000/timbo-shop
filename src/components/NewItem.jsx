@@ -31,7 +31,7 @@ const ProductCard = ({ id, image, category, name, price }) => {
           <Link
             to="/cart"
             onClick={() => cart.addOneToCart(id)}
-            className="flex items-center gap-2 bg-buttonBackground text-white rounded-full px-4 py-2 text-sm"
+            className="flex items-center gap-2 bg-red-600 text-white rounded-full px-4 py-2 text-sm"
           >
             Add to Cart <FaShoppingCart />
           </Link>
