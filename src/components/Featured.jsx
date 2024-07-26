@@ -69,7 +69,7 @@ const Featured = () => {
   ];
 
   return (
-    <div className="bg-navColor py-12 lg:py-24 mt-32" id="featured">
+    <div className="bg-navColor py-12 lg:py-24" id="featured">
       <div className="container mx-auto px-4 lg:px-8">
         <h1 className="text-3xl lg:text-[45px] font-semibold text-navText mb-8 text-center lg:text-left">
           Featured Categories
