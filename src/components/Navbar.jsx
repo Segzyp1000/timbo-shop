@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-navColor text-navText w-full p-4 lg:p-5">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container flex justify-between items-center">
         <h1 className="text-2xl lg:text-[35px] font-bold">EverTrend</h1>
         <div className="hidden lg:flex space-x-5 text-xl">
           <a href={`/#${params.section || "new-item"}`} className="font-bold">
