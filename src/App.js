@@ -9,6 +9,8 @@ import CheckoutPage from "./pages/CheckoutPage";
 import MainPage from "./Layer/MainPage";
 import HomePage from "./pages/HomePage";
 import CartProvider from "./CartContext";
+import NewItem from "./components/NewItem";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +18,8 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/checkout" element={<CheckoutPage />} />
+      <Route path="/new-items" element={<NewItem />} />
+
 
     </Route>
   )

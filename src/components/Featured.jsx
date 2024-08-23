@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { CartContext } from "../CartContext";
 import Smart from "../asset/Smart watch 1.png";
@@ -8,7 +7,6 @@ import Laptop from "../asset/laptop.png";
 
 const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
   const cart = useContext(CartContext);
-  const quantity = cart.getProductQuantity(id);
 
   return (
     <div className="bg-slate-400 p-4 rounded-lg">
@@ -19,25 +17,13 @@ const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
           <p className="text-white">{price}</p>
           <p className="line-through text-white text-sm">{oldPrice}</p>
         </div>
-        {quantity === 0 ? (
-          <button
-            onClick={() => cart.addOneToCart(id)}
-            className="bg-red-600 text-white p-2 rounded-xl flex items-center gap-2"
-          >
-            Add to Cart <FaShoppingCart />
-          </button>
-        ) : (
-          <div className="flex items-center gap-2">
-            <span className="text-white">{quantity}</span>
-            <Link
-              to="/cart"
-              onClick={() => cart.addOneToCart(id)}
-              className="bg-green-500 text-white p-2 rounded-xl"
-            >
-              Buy Now
-            </Link>
-          </div>
-        )}
+        <button
+          onClick={() => cart.addOneToCart(id)}
+          className="bg-red-600 text-white p-2 rounded-xl flex items-center gap-2"
+        >
+          Add to Cart
+        </button>
+        <div className="flex items-center gap-2"></div>
       </div>
     </div>
   );

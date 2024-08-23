@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import Micro from "../asset/Rectangle 11 (2).png";
 import Pc from "../asset/10706486 1.png";
@@ -28,13 +27,12 @@ const ProductCard = ({ id, image, category, name, price }) => {
         <p className="font-bold text-lg mb-2">{name}</p>
         <div className="flex justify-between items-center">
           <p className="font-bold">{price}</p>
-          <Link
-            to="/cart"
+          <button
             onClick={() => cart.addOneToCart(id)}
             className="flex items-center gap-2 bg-red-600 text-white rounded-full px-4 py-2 text-sm"
           >
-            Add to Cart <FaShoppingCart />
-          </Link>
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
