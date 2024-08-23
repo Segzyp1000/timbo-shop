@@ -110,7 +110,7 @@ const CartPage = () => {
     return (
       <div
         key={item.id}
-        className="flex justify-between items-center border-b py-4"
+        className="flex justify-between items-center border-b py-4 "
       >
         <div className="flex items-center">
           <img
@@ -158,7 +158,7 @@ const CartPage = () => {
     }, 0);
   };
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-20">
       <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
       {cart.items.length === 0 ? (
         <p>Your cart is empty.</p>
