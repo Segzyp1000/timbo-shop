@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import { CartContext } from "../CartContext";
 import Smart from "../asset/Smart watch 1.png";
 import Headphone from "../asset/Beautiful gaming headphone -5 1.png";
@@ -56,7 +55,7 @@ const Featured = () => {
   return (
     <div className="bg-white py-12 lg:py-24" id="featured">
       <div className="container mx-auto px-4 lg:px-8">
-        <h1 className="text-3xl lg:text-[45px] font-semibold text-navText mb-8 text-center lg:text-left">
+        <h1 className="text-3xl lg:text-[45px] font-semibold text-green-800 mb-8 text-center lg:text-left">
           Featured Categories
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
