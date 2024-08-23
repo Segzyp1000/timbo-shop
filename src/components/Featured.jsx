@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FaShoppingCart } from "react-icons/fa";
+
 import { CartContext } from "../CartContext";
 import Smart from "../asset/Smart watch 1.png";
 import Headphone from "../asset/Beautiful gaming headphone -5 1.png";
@@ -12,18 +12,17 @@ const FeaturedItem = ({ id, image, title, price, oldPrice }) => {
     <div className="bg-slate-400 p-4 rounded-lg">
       <img src={image} alt={title} className="w-[349px] h-[309px] mb-4" />
       <p className="text-xl text-white font-semibold mb-2">{title}</p>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between ">
         <div>
           <p className="text-white">{price}</p>
           <p className="line-through text-white text-sm">{oldPrice}</p>
         </div>
         <button
           onClick={() => cart.addOneToCart(id)}
-          className="bg-red-600 text-white p-2 rounded-xl flex items-center gap-2"
+          className="bg-red-600 text-white p-2 rounded-xl flex gap-2"
         >
           Add to Cart
         </button>
-        <div className="flex items-center gap-2"></div>
       </div>
     </div>
   );
@@ -55,7 +54,7 @@ const Featured = () => {
   ];
 
   return (
-    <div className="bg-navColor py-12 lg:py-24" id="featured">
+    <div className="bg-white py-12 lg:py-24" id="featured">
       <div className="container mx-auto px-4 lg:px-8">
         <h1 className="text-3xl lg:text-[45px] font-semibold text-navText mb-8 text-center lg:text-left">
           Featured Categories
