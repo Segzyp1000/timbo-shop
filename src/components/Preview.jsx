@@ -3,10 +3,10 @@ import pic from "../asset/editted 1.png";
 
 const Preview = () => {
   return (
-    <div className="bg-white text-green-800 py-12 lg:py-24 mt-16">
+    <div className="bg-white text-green-800 py-24 mt-16">
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center">
-        <div className="text-center lg:text-left mb-8 lg:mb-0">
-          <h1 className="text-3xl lg:text-[48px] font-normal tracking-widest mb-2">
+        <div className="text-center lg:text-left mb-8 lg:mb-0 ">
+          <h1 className="text-3xl lg:text-[48px] font-normal tracking-widest mb-7">
             Explore Our
           </h1>
           <span className="text-4xl lg:text-[55px] font-semibold">

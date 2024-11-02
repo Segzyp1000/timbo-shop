@@ -13,8 +13,8 @@ const Navbar = () => {
       : "";
 
   return (
-    <nav className=" navb bg-navColor text-navText w-full p-4 lg:p-5 fixed">
-      <div className="container flex justify-between items-center">
+    <nav className="fixed top-0 left-0 z-50 p-5 bg-navColor text-navText w-full">
+      <div className="flex justify-between items-center w-full mx-auto">
         <Link to="/">
           <h1 className="text-2xl lg:text-[35px] font-bold">EverTrend</h1>
         </Link>
